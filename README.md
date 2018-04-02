@@ -10,15 +10,16 @@ Based on https://gist.github.com/rosner/14f9b25abb921394ce3724dd000eb7a3#dwh-mod
 * Assumptions: For Question 2, "with the MOST installs coming in from Android" is interpreted as channels are ordered as per count of installs coming from Android, and not filtered only for Android.
 
 ### Stripe_Webhook_Part2: 
-Based on: https://gist.github.com/rosner/14f9b25abb921394ce3724dd000eb7a3#background
+Based on: https://gist.github.com/rosner/14f9b25abb921394ce3724dd000eb7a3#background 
+
 / Python:
 1. [setup.py](https://github.com/sejalv/dwh_modelling_and_customer_analytics/blob/master/Stripe_Webhook_Part2/Python/setup.py) - configuration details for API_KEY and DB_CONN
 2. [api_handler.py](https://github.com/sejalv/dwh_modelling_and_customer_analytics/blob/master/Stripe_Webhook_Part2/Python/api_handler.py) - Stripe's webhook function to call API and receive "Events" info.
-3. [utilities.py](https://github.com/sejalv/dwh_modelling_and_customer_analytics/blob/master/Stripe_Webhook_Part2/Python/utilities.py) - Parsing of JSON Response and insert to or retrieve details from database. The code has been written for given sample JSON response of type 'Charge.Succeeded', but is flexible to be modified for handling any event type.
+3. [utilities.py](https://github.com/sejalv/dwh_modelling_and_customer_analytics/blob/master/Stripe_Webhook_Part2/Python/utilities.py) - Parsing of JSON Response and insert to or retrieve details from database. The code has been written for given sample JSON response of type 'Charge.Succeeded', but is flexible to be modified for handling any event type. 
 
 / SQL:
 1. [Data Model](https://github.com/sejalv/dwh_modelling_and_customer_analytics/blob/master/Stripe_Webhook_Part2/SQL/8fit%20-%20Analytics%20-%20Data%20Model.pdf) - Schema Design for analytical purposes
-2. [DWH_Schema_Build.sql](https://github.com/sejalv/dwh_modelling_and_customer_analytics/blob/master/Stripe_Webhook_Part2/SQL/DWH_Schema_Build.sql) - Schema Build script
+2. [DWH_Schema_Build.sql](https://github.com/sejalv/dwh_modelling_and_customer_analytics/blob/master/Stripe_Webhook_Part2/SQL/DWH_Schema_Build.sql) - Schema Build script for creating the above mentioned data model
 3. [Customer_Analytics_Insights.sql](https://github.com/sejalv/dwh_modelling_and_customer_analytics/blob/master/Stripe_Webhook_Part2/SQL/Customer_Analytics_Insights.sql) - Analytical queries based on given use-cases (eg. lifetime value of a customer, cohort analysis and retention info etc.). Provided with sample output
  
 

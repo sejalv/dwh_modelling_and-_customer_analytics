@@ -1,8 +1,15 @@
 # dwh_modelling_and_customer_analytics
 Repository for 8fit's [technical assignment](https://gist.github.com/rosner/14f9b25abb921394ce3724dd000eb7a3)
  
+## Tasks
+[x] SQL Queries for Part 1 of the assignment 
+[x] Create Schema for analytics based on use-cases mentioned and Stripe's response examples (https://stripe.com/docs/api/python#events)
+[x] Lambda Handler (python function) for Stripe Webhook - to receive response from API
+[x] Extract event data and source objects from JSON response, and write to Postgres DB
+[] Create new stack in AWS using Cloud Formation
+[] Create Lambda and Step Functions to instead store required reponse objects in CSV on S3
 
-## Directory Structure and Flow
+## Directory Structure
 
 ### DWH_Modelling_Part1: 
 Based on https://gist.github.com/rosner/14f9b25abb921394ce3724dd000eb7a3#dwh-modelling

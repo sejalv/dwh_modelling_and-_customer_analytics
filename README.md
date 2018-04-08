@@ -14,7 +14,7 @@ Repository for a [technical assignment](https://gist.github.com/rosner/14f9b25ab
 ### DWH_Modelling_Part1: 
 Based on https://gist.github.com/rosner/14f9b25abb921394ce3724dd000eb7a3#dwh-modelling
 * [SQL Queries](https://github.com/sejalv/dwh_modelling_and_customer_analytics/blob/master/DWH_Modelling_Part1/SQL_queries_analytics.sql) to the first part of the assignment
-* Assumptions: For Question 2, "with the MOST installs coming in from Android" is interpreted as channels are ordered as per count of installs coming from Android, and not filtered only for Android.
+* Assumptions: For Question 2, "with the MOST installs coming in from Android" is interpreted as channels are sorted as per most count of installs coming from Android, and not those filtered for Android only.
 
 ### Stripe_Webhook_Part2: 
 Based on: https://gist.github.com/rosner/14f9b25abb921394ce3724dd000eb7a3#background 

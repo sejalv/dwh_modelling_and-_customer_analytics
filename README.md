@@ -1,4 +1,4 @@
-# dwh_modelling_and_customer_analytics
+# dwh_modelling_and_analytics_assignment
 Repository for a [technical assignment](https://gist.github.com/rosner/14f9b25abb921394ce3724dd000eb7a3)
  
 ## Tasks
